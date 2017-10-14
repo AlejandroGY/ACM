@@ -38,7 +38,6 @@ int main() {
 	int n, k;
 	while(cin >> n >> k) {
 		int arboles[n];
-		int fin = 1;
 		for(int i = 0; i < n; ++i) {
 			cin >> arboles[i];
 		}
