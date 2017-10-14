@@ -21,7 +21,6 @@ bool solve() {
 	char pila[8];
 	int id = 0, idx = 0;
 	stringstream cad2;
-	cad1.clear();
 	for(int i = 0; i < 8; i++) {
 		if(a[i] == 1) {
 			pila[id] = s1[idx++];
