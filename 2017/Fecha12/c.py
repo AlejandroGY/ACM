@@ -1,13 +1,3 @@
-import math
-import atexit, io, sys
-
-buffer = io.BytesIO()
-sys.stdout = buffer
-
-@atexit.register
-def write():
-	sys.__stdout__.write(buffer.getvalue())
-
 def binomial(n, k):
 	res = 1
 	if k > n - k:
