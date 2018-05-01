@@ -33,6 +33,7 @@ int main( ) {
 		int a[n], b[n];
 		std::fill(a, a + n, 1);
 		std::fill(b, b + n, 1);
+		
 		for (int i = 0; i < n; ++i) {
 			a[i] = std::max(a[i], int(lis_size(arr, arr + i)));
 		}
