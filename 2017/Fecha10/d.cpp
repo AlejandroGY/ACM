@@ -24,12 +24,11 @@ tile rotar(tile t) {
 }
 
 tile menor(tile t) {
-	tile temp = rotar(t);
-	t = std::min(t, temp);
-	temp = rotar(temp);
-	t = std::min(t, temp);
-	temp = rotar(temp);
-	t = std::min(t, temp);
+	tile temp = t;
+	for (int i = 0; i < 3; ++i) {
+		temp = rotar(temp);
+		t = std::min(t, temp);
+	}
 	return t;
 }
 
